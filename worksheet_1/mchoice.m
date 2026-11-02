@@ -77,7 +77,7 @@ transm % display transition matrix
 r = rand;
 if r <= param_a
     hnext = mod(j,3)+1;
-elseif or(r>param_a,r<=param_b)
+elseif and(r>param_a,r<=param_b)
     hnext=mod(j+1,3)+1;
 else 
     hnext = j;
